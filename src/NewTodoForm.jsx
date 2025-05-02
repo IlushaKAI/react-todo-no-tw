@@ -32,6 +32,7 @@ export function NewTodoForm({ onSubmit }) {
         {/* Управляемое поле ввода: значение берётся из состояния, 
             при изменении обновляем состояние */}
         <input
+          className="border-2 border-gray-600"
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
           type="text"

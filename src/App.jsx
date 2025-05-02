@@ -6,6 +6,7 @@ import { NewTodoForm } from "./NewTodoForm";
 import "./styles.css";
 // Импортируем компонент списка задач
 import { TodoList } from "./TodoList";
+import { Button } from "./components/ui/button";
 
 // Основной компонент приложения
 export default function App() {
@@ -68,6 +69,15 @@ export default function App() {
   return (
     <>
       {/* Форма для созданисчя новых задач */}
+      <h1 className="bg-gray-500">Tailwind + Shadcn</h1>
+      <p>Вам необходимо переписать стили из old.css</p>
+      <Button
+        onClick={() =>
+          alert("Попробуй импортировать еще несколько компонентов из Shadcn")
+        }
+      >
+        Кнопка из Shadcn
+      </Button>
       <NewTodoForm onSubmit={addTodo} />
       {/* Заголовок списка задач */}
       <h1 className="header">Todo List</h1>
